@@ -1,0 +1,164 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    min-width: 1024px;
+}
+
+
+@media screen  and (max-width: 1023px) {
+    .container {
+        width: 768px;
+    }
+
+    .container-fluid {
+        min-width: 678px;
+    }
+}
+
+@media screen  and (max-width: 767px) {
+    .container {
+        width: 420px;
+    }
+
+    .container-fluid {
+        min-width: 420px;
+    }
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif !important;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #a2c26b;
+    --secondary-color: #feb6a3;
+    --font-primary-color: #253834;
+    --font-secondary-color: #979d9b;
+    --dark-green: #0e746f;
+}
+
+header, footer, section {
+    position: relative;
+}
+
+/* UI-KIT */
+
+.app-button {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    border-radius: 70px;
+    font-size: 30px;
+    border: 5px solid var(--dark-green);
+    color: var(--dark-green);
+    background: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.app-button:hover {
+    background: var(--main-color);
+    color: white;
+}
+
+/* TOP LINE */
+
+.top-line {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: var( --main-color);
+    color: #f5f6d4;
+    font-size: 20px;
+}
+
+/* HEADER */
+
+.header {
+    min-height: calc(100vh - 40px);
+    display: flex;
+    align-items: stretch;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header__left-part,
+.header__right-part {
+    width: 48%;
+}
+
+.header__right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.header__image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--font-primary-color);
+    padding-bottom: 20px;
+}
+
+.header__quote {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.header__emoji {
+    font-size: 30px;
+}
+
+.header__button {
+    margin-top: 30px;
+}
+
+@media screen  and (max-width: 767px) {
+    .header__title {
+        font-size: 40px;
+    }
+
+    .header__quote {
+        font-size: 27px;
+    }
+
+    .header__left-part,
+    .header__right-part {
+        width: 100%;
+    }
+    .header__right-part {
+        padding-top: 30px;
+        padding-right: 0;
+        padding-bottom: 30px;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__left-part {
+        order:2;
+    }
+}
+
+/* SEED_PROBLEMS */
+/* KIT INCLUDES */
+/* HOW TO USE */
+/* COMMENTS */
+/* FOOTER */
