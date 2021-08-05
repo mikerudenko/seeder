@@ -8,9 +8,33 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./scroll-button.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="./app.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '652261812411290');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=652261812411290&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
-    <section class='top-line container-fluid'>New way of gardening!</section>
+    <section class='top-line container-fluid'>New way of gardening! 🧑‍🌾</section>
     <header class="header container-fluid">
         <div class="header__left-part">
             <img src="./images/main-image.jpg" alt="" loading='lazy' class="header__image">
@@ -28,11 +52,126 @@
         </div>
     </header>
     <main>
-        <section class="seed-problems"></section>
-        <section class="seeding-kit"></section>
-        <section class="how-to-use"></section>
-        <section class="comments"></section>
-        <footer class="contacts"></footer>
+        <section class="seed-problems container-fluid">
+            <h2 class="section-title">So what is the problem, cap? 💁</h2>
+            <div class="container seed-problems__content">
+                <div class="seed-problems__item">
+                    <img src="./images/bad-plant-mesh.jpg" alt="" loading='lazy' class="seed-problems__item-image">
+                    <p class="seed-problems__item-title">Plants seeded randomly 🚫</p>
+                </div>
+                <div class="seed-problems__item">
+                    <img src="./images/undetected-weed.jpg" alt="" loading='lazy' class="seed-problems__item-image">
+                    <p class="seed-problems__item-title">Weeds are not easy to detect 🚫</p>
+                </div>
+                <div class="seed-problems__item">
+                    <img src="./images/less-plant-space.jpg" alt="" loading='lazy' class="seed-problems__item-image">
+                    <p class="seed-problems__item-title">Each plant have no exact amount of space 🚫</p>
+                </div>
+            </div>
+        </section>
+        <div class="app-alert-block container-fluid">
+            <q>
+            And here's perfect gardening solution!
+           </q> 🧑‍🌾
+        </div>
+        <section class="seeding-kit">
+            <div class="seeding-kit__content">
+                <img src="./images/seed-platform-details.jpg" alt="" loading='lazy' class="seeding-kit__image">
+                <img src="./images/seed-kit-details.jpg" alt="" loading='lazy' class="seeding-kit__image">
+            </div>
+            <button class="app-button seeding-kit__button">I want it!</button>
+        </section>
+        <section class="how-to-use">
+            <h2 class="section-title">How to use seeder platform? 💁</h2>
+            <div class="how-to-use__content">
+                <div class="how-to-use__item">
+                    <img src="./images/step-1.jpg" alt="" class="how-to-use__image">
+                    <p class="how-to-use__item-title">1. Place template on soil</p>
+                </div>
+                <div class="how-to-use__item">
+                    <img src="./images/step-2.jpg" alt="" class="how-to-use__image">
+                    <p class="how-to-use__item-title">2. Poke holes</p>
+                </div>
+                <div class="how-to-use__item">
+                    <img src="./images/step-3.jpg" alt="" class="how-to-use__image">
+                    <p class="how-to-use__item-title">3. Insert funnel into platform</p>
+                </div>
+                <div class="how-to-use__item">
+                <img src="./images/step-4.jpg" alt="" class="how-to-use__image">
+                    <p class="how-to-use__item-title">4. Seed your plants</p>
+                </div>
+            </div>
+        </section>
+        <div class="app-alert-block container-fluid">
+            <q>
+            Be delighted with seed result!
+           </q> 🧑‍🌾 <button class="app-button delighted-result-button">I want it!</button>
+        </div>
+        <section class="plant-result">
+            <div class="container plant-result__content">
+                <div class="plant-result__item">
+                    <img src="./images/seeding-result.jpg" alt="" loading='lazy' class="plant-result__item-image">
+                    <p class="plant-result__item-title">Plants seeded by mesh ✅</p>
+                </div>
+                <div class="plant-result__item">
+                    <img src="./images/detect-weed.jpg" alt="" loading='lazy' class="plant-result__item-image">
+                    <p class="plant-result__item-title">Weeds are EASY to detect (because of mesh) ✅</p>
+                </div>
+                <div class="plant-result__item">
+                    <img src="./images/seeder-cool.jpg" alt="" loading='lazy' class="plant-result__item-image">
+                    <p class="plant-result__item-title">Faster way to plant your garden ✅</p>
+                </div>
+            </div>
+        </section>
+        <section class="comments">
+            <h2 class="section-title">Still don't believe it? Here's customer feedback</h2>
+            <div class="comments__content container">
+                <div class="comments__item">
+                    <p class="comments__item-name">
+                        <a href="https://www.amazon.com/gp/profile/amzn1.account.AFXP4GLNJYOTGCAJ7OJSQNXTB3YQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8" class="comments__person-link">Joseph</a>
+                        🧑
+                    </p>
+                    <p class="comments__item-text">
+                        I just used this to start my lettuce seeds in a small bed. Chart said use red circles. Placed the block over the dirt, punched holes in all the red circles, then dropped seeds. Covered and watered in. Boom. Done.
+                    </p>
+                    <a class="comments__link-to-review" href="https://www.amazon.com/gp/product/B08X3VZ1V8?pf_rd_r=QFQE5N93DTJ0H4SV2V42&pf_rd_p=5ae2c7f8-e0c6-4f35-9071-dc3240e894a8&pd_rd_r=ab5ab76a-c903-4c5a-b5f7-cf1c3e7a2269&pd_rd_w=i3uS1&pd_rd_wg=sByYt&ref_=pd_gw_unk">Link to review</a>
+                </div>
+                <div class="comments__item">
+                    <p class="comments__item-name">
+                        <a href="https://www.amazon.com/gp/profile/amzn1.account.AFRQDEI3NFLPV322VHLEOPXATFUQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8" class="comments__person-link">Christopher Williams
+                        </a>
+                        👨🏿
+                    </p>
+                    <p class="comments__item-text">
+                        I never thought planting seeds could be so easy. This gardening template is a must have if you have a garden. Comes with instructions on how to plant which seeds. There is also all the tools you might need. The size is a square foot so you can properly plant what you need. The design is user friendly and it’s great quality ! Definitely recommend it if you want an easy planting process !
+                    </p>
+                    <a class="comments__link-to-review" href="https://www.amazon.com/gp/product/B08X3VZ1V8?pf_rd_r=QFQE5N93DTJ0H4SV2V42&pf_rd_p=5ae2c7f8-e0c6-4f35-9071-dc3240e894a8&pd_rd_r=ab5ab76a-c903-4c5a-b5f7-cf1c3e7a2269&pd_rd_w=i3uS1&pd_rd_wg=sByYt&ref_=pd_gw_unk">Link to review</a>
+                </div>
+                <div class="comments__item">
+                    <p class="comments__item-name">
+                        <a href="https://www.amazon.com/gp/profile/amzn1.account.AFX2WLXHOYIL6O2G4UBREKII45LA/ref=cm_cr_dp_d_gw_tr?ie=UTF8" class="comments__person-link">Book lover
+                        </a>
+                        👲
+                    </p>
+                    <p class="comments__item-text">
+                        Great product at a great price. I am happy that the material is not plastic for a change. The planting template provided has been a great help to determine the space between various vegetables I planted. All in all perfect for square foot gardening.
+                    </p>
+                    <a class="comments__link-to-review" href="https://www.amazon.com/gp/product/B08X3VZ1V8?pf_rd_r=QFQE5N93DTJ0H4SV2V42&pf_rd_p=5ae2c7f8-e0c6-4f35-9071-dc3240e894a8&pd_rd_r=ab5ab76a-c903-4c5a-b5f7-cf1c3e7a2269&pd_rd_w=i3uS1&pd_rd_wg=sByYt&ref_=pd_gw_unk">Link to review</a>
+                </div>
+            </div>
+        </section>
+        <div class="app-alert-block container-fluid">
+            <q>
+            Okay, you convinced me!
+           </q> 🧑‍🌾 <button class="app-button delighted-result-button">I want it!</button>
+        </div>
+        <footer class="footer">
+            <p class="footer__contacts">
+                If you have any problems with our product please write on this email
+                <a class="footer__email" href="mailto:ab.garden.company@gmail.com"> ab.garden.company@gmail.com 📧</a>
+                    We will contact you soon and solve your problems easily
+            </p>
+        </footer>
     </main>
     <footer></footer>
 </body>
